@@ -10,6 +10,7 @@
         "vue": "^3.5.24",
         "vue-i18n": "10",
         "vue-router": "4",
+        "vue3-marquee-slider": "^1.0.5",
       },
       "devDependencies": {
         "@tailwindcss/vite": "^4.1.18",
@@ -332,6 +333,8 @@
     "vue-router": ["vue-router@4.6.4", "", { "dependencies": { "@vue/devtools-api": "^6.6.4" }, "peerDependencies": { "vue": "^3.5.0" } }, "sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg=="],
 
     "vue-tsc": ["vue-tsc@3.2.2", "", { "dependencies": { "@volar/typescript": "2.4.27", "@vue/language-core": "3.2.2" }, "peerDependencies": { "typescript": ">=5.0.0" }, "bin": { "vue-tsc": "bin/vue-tsc.js" } }, "sha512-r9YSia/VgGwmbbfC06hDdAatH634XJ9nVl6Zrnz1iK4ucp8Wu78kawplXnIDa3MSu1XdQQePTHLXYwPDWn+nyQ=="],
+
+    "vue3-marquee-slider": ["vue3-marquee-slider@1.0.5", "", { "dependencies": { "vue": "^3.2.45" } }, "sha512-92nrvGrmTC9Ltqz6QRXdkuJ5Tj6gM+69xy8sEB2kq/xY8RI/FTQxDF6QiCyJdieJDNL67giKlhJVDL0D9i9SxQ=="],
 
     "@tailwindcss/oxide-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.8.1", "", { "dependencies": { "@emnapi/wasi-threads": "1.1.0", "tslib": "^2.4.0" }, "bundled": true }, "sha512-AvT9QFpxK0Zd8J0jopedNm+w/2fIzvtPKPjqyw9jwvBaReTTqPBk9Hixaz7KbjimP+QNz605/XnjFcDAL2pqBg=="],
 
