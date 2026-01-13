@@ -16,18 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-content: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
 
 [dir="rtl"] {
   font-family: "Inter", "Arial", sans-serif;
 }
-
+body{
+  overflow-x: hidden;
+}
 /* Animations */
 @layer components {
   .fade-enter-active,
