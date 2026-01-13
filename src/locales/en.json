@@ -1,0 +1,25 @@
+{
+  "home": {
+    "title": "Welcome to Coffee Haven",
+    "subtitle": "Experience the finest coffee from around the world.",
+    "cta": "Explore Menu",
+    "ourProducts": "Our Premium Selection"
+  },
+  "product": {
+    "addToCart": "Add to Cart",
+    "quantity": "Quantity",
+    "reviews": "Customer Reviews",
+    "noReviews": "No reviews yet.",
+    "price": "Price",
+    "discount": "Discounted Price"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "checkout": "Checkout"
+  },
+  "nav": {
+    "home": "Home",
+    "cart": "Cart"
+  }
+}

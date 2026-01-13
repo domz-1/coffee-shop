@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso Gold",
+    "description": "A rich and smooth espresso with golden crema and notes of chocolate and almond.",
+    "price": 4.5,
+    "discount": 0.5,
+    "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600",
+    "gallery": [
+      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600",
+      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600"
+    ],
+    "reviews": [
+      {
+        "user": "John Doe",
+        "rating": 5,
+        "comment": "Best espresso in town!"
+      },
+      {
+        "user": "Jane Smith",
+        "rating": 4,
+        "comment": "Very rich flavor."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cappuccino Royale",
+    "description": "Classic cappuccino topped with velvet foam and a dusting of premium cocoa.",
+    "price": 5.75,
+    "discount": 0.0,
+    "image": "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600",
+    "gallery": [
+      "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600",
+      "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600"
+    ],
+    "reviews": [
+      {
+        "user": "Alice",
+        "rating": 5,
+        "comment": "So creamy!"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Caramel Macchiato",
+    "description": "Sweet caramel drizzled over steamed milk and espresso.",
+    "price": 6.25,
+    "discount": 1.0,
+    "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=600",
+    "gallery": [
+      "https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=600"
+    ],
+    "reviews": []
+  },
+  {
+    "id": 4,
+    "name": "Iced Vanilla Latte",
+    "description": "Perfectly balanced espresso and milk over ice with natural vanilla syrup.",
+    "price": 5.5,
+    "discount": 0.0,
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600",
+    "gallery": [
+      "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600"
+    ],
+    "reviews": [
+      {
+        "user": "Bob",
+        "rating": 4,
+        "comment": "Very refreshing."
+      }
+    ]
+  }
+]
