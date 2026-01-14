@@ -115,8 +115,3 @@ import IconFeatureQuick from "../icons/IconFeatureQuick.vue";
     </div>
   </section>
 </template>
-<style scoped>
-.font-quicksand {
-  font-family: "Quicksand", sans-serif;
-}
-</style>

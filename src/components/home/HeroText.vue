@@ -46,13 +46,6 @@ import IconQuickActions from "@/components/icons/IconQuickActions.vue";
         class="w-[46px] h-[46px] relative flex items-center justify-center group"
         aria-label="Quick Actions"
       >
-        <circle
-          cx="23"
-          cy="23"
-          r="23"
-          fill="#004876"
-          class="absolute w-full h-full"
-        />
         <IconQuickActions class="relative z-10" />
       </button>
     </div>
