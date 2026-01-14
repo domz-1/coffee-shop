@@ -6,7 +6,7 @@
     </router-link>
     <div class="flex items-center space-x-4 rtl:space-x-reverse">
       <div class="flex items-center space-x-[11px] rtl:space-x-reverse gap-[11px]">
-        <button @click="toggleLocale" class="text-[#004876]! font-bold text-xs hover:opacity-80 cursor-pointer">
+        <button @click="toggleLocale" class="text-[#004876]! font-bold text-xs hover:opacity-80">
           {{ locale === "en" ? "ع" : "EN" }}
         </button>
         <router-link to="/" class="relative flex items-center justify-center">
@@ -24,7 +24,7 @@
             </span>
           </div>
         </router-link>
-        <button class="text-black cursor-pointer">
+        <button class="text-black">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 12H21M3 6H21M3 18H21" stroke="#000000" stroke-width="2" stroke-linecap="round" />
           </svg>

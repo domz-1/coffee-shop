@@ -1,5 +1,5 @@
 <template>
-  <div :dir="locale === 'ar' ? 'rtl' : 'ltr'" class="min-h-screen bg-white">
+  <div :dir="dir" class="min-h-screen bg-white">
     <AppNavbar />
     <main>
       <router-view v-slot="{ Component, route }">
@@ -11,14 +11,11 @@
     <AppFooter />
   </div>
 </template>
+
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import { watchEffect } from "vue";
+import { useLang } from "@/composables/useLang";
 import AppNavbar from "@/components/layout-related/AppNavbar.vue";
 import AppFooter from "@/components/layout-related/AppFooter.vue";
-const { locale } = useI18n();
-watchEffect(() => {
-  document.documentElement.dir = locale.value === "ar" ? "rtl" : "ltr";
-  document.documentElement.lang = locale.value;
-});
+
+const { dir } = useLang();
 </script>

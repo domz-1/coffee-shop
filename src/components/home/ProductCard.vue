@@ -1,6 +1,5 @@
 <template>
-  <router-link :to="`/product/${product.id}`"
-    class="w-full max-w-[287px] flex flex-col items-center group cursor-pointer">
+  <router-link :to="`/product/${product.id}`" class="w-full max-w-[287px] flex flex-col items-center group">
     <div class="relative w-[287px] h-[300px] flex items-center justify-center">
       <!-- Layered Backgrounds -->
       <!-- Background Image Layer -->

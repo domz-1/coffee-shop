@@ -33,6 +33,11 @@ body {
   overflow-x: hidden !important;
 }
 
+button,
+a {
+  cursor: pointer;
+}
+
 /* Animations */
 .fade-enter-active,
 .fade-leave-active {

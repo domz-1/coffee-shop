@@ -10,7 +10,7 @@ const isPaused = ref(false);
 
 <template>
   <section
-    class="w-full overflow-hidden bg-[#fdfdfd] py-[10px] border-b border-[#f2f2f2] cursor-pointer [&_.vue-marquee-slider]:h-[18px] [&_.vue-marquee-slider]:flex [&_.vue-marquee-slider]:items-center"
+    class="w-full overflow-hidden bg-[#fdfdfd] py-[10px] border-b border-[#f2f2f2] [&_.vue-marquee-slider]:h-[18px] [&_.vue-marquee-slider]:flex [&_.vue-marquee-slider]:items-center"
     @mouseenter="isPaused = true" @mouseleave="isPaused = false">
     <div class="w-full">
       <!-- Using :key="locale" ensures the marquee re-initializes on language change -->
