@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --color-cs-uluru-sunset: #6f4336;
+  --color-cs-moon-dance: #f9edbd;
+  --color-cs-smoked-black-coffee: #3b2f2f;
+  --color-cs-delicate-violet: #8b8ba5;
+  --color-cs-gilded-age: #e1b168;
+  --color-cs-medici-blue: #004876;
+  --color-cs-deep-water: #1e71a6;
+  --color-cs-little-dipper: #e5e7eb;
+  --color-cs-night-dive: #00365a;
+  --color-cs-brilliance: #fdfdfd;
+}
+
 @layer utilities {
   .font-quicksand {
     font-family: "Quicksand", sans-serif;
@@ -24,18 +37,17 @@
 }
 
 [dir="rtl"] * {
-    font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 body {
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 
 button,
 a {
   cursor: pointer;
 }
-
 
 /* Animations */
 .fade-enter-active,

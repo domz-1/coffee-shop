@@ -9,13 +9,30 @@ const isPaused = ref(false);
 <template>
   <section
     class="w-full overflow-hidden bg-[#fdfdfd00] py-[10px] rtl:dir-ltr border-b border-[#f2f2f200] [&_.vue-marquee-slider]:h-[18px] [&_.vue-marquee-slider]:flex [&_.vue-marquee-slider]:items-center"
-    @mouseenter="isPaused = true" @mouseleave="isPaused = false">
+    @mouseenter="isPaused = true"
+    @mouseleave="isPaused = false"
+  >
     <div class="w-full">
-      <VueMarqueeSlider :key="locale" id="coffee-marquee" :speed="12000" :space="32" :paused="isPaused"
-        :auto-width="true" :repeat="20">
+      <VueMarqueeSlider
+        :key="locale"
+        id="coffee-marquee"
+        :speed="12000"
+        :space="32"
+        :paused="isPaused"
+        :auto-width="true"
+        :repeat="20"
+      >
         <template v-for="i in 10" :key="i">
-          <img src="/marquee/peen.png" alt="Bean" class="h-[18px] w-auto object-contain block" />
-          <img src="/marquee/text.png" alt="Coffee House" class="h-[18px] w-auto object-contain block" />
+          <img
+            src="/marquee/peen.png"
+            alt="Bean"
+            class="h-[18px] w-auto object-contain block"
+          />
+          <img
+            src="/marquee/text.png"
+            alt="Coffee House"
+            class="h-[18px] w-auto object-contain block"
+          />
         </template>
       </VueMarqueeSlider>
     </div>

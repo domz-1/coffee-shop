@@ -4,10 +4,10 @@
     class="py-20 px-4 max-w-[1440px] mx-auto text-center font-quicksand"
   >
     <div class="mb-12">
-      <p class="text-[#3B2F2F] font-normal text-xl mb-1">
+      <p class="text-cs-smoked-black-coffee font-normal text-xl mb-1">
         {{ t("home.ourProducts") }}
       </p>
-      <h2 class="text-[#3B2F2F] font-bold text-[32px] leading-10">
+      <h2 class="text-cs-smoked-black-coffee font-bold text-[32px] leading-10">
         {{ t("home.categories.specialOffers") }}
       </h2>
     </div>
@@ -20,14 +20,14 @@
           class="text-base lg:text-xl font-medium whitespace-nowrap transition-colors relative pb-2"
           :class="
             activeCategory === cat.id
-              ? 'text-[#004876]'
-              : 'text-[#3B2F2F] font-normal'
+              ? 'text-cs-medici-blue'
+              : 'text-cs-smoked-black-coffee font-normal'
           "
         >
           {{ t(cat.labelKey) }}
           <span
             v-if="activeCategory === cat.id"
-            class="absolute bottom-0 left-0 w-full h-0.5 bg-[#004876] rounded-full"
+            class="absolute bottom-0 left-0 w-full h-0.5 bg-cs-medici-blue rounded-full"
           ></span>
         </button>
       </div>

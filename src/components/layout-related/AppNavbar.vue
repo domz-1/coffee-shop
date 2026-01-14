@@ -15,13 +15,13 @@
       >
         <button
           @click="toggleLocale"
-          class="text-[#004876]! font-bold text-xs hover:opacity-80"
+          class="text-cs-medici-blue! font-bold text-xs hover:opacity-80"
         >
           {{ locale === "en" ? "ع" : "EN" }}
         </button>
         <router-link to="/" class="relative flex items-center justify-center">
           <div
-            class="w-[28px] h-[28px] bg-[#004876] rounded-full flex items-center justify-center shadow-lg"
+            class="w-[28px] h-[28px] bg-cs-medici-blue rounded-full flex items-center justify-center shadow-lg"
           >
             <svg
               width="14"

@@ -10,17 +10,15 @@
         alt=""
         class="w-full h-full object-contain rtl:scale-x-[-1]"
       />
-     
     </div>
-     <div
-      class="absolute w-fit  top-[-10%]  h-screen scale-100 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 left-[-0%] md:left-[-0%] rtl:left-auto rtl:right-[-0%] rtl:md:right-0"
+    <div
+      class="absolute w-fit top-[-10%] h-screen scale-100 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 left-[-0%] md:left-[-0%] rtl:left-auto rtl:right-[-0%] rtl:md:right-0"
     >
       <img
         src="../../../public/hero/squares-beside the text.png"
         alt=""
         class="w-full h-full object-contain rtl:scale-x-[-1]"
       />
-     
     </div>
     <section
       class="relative w-full max-w-screen min-h-[720px] flex items-center overflow-hidden mt-12 md:mt-0"
@@ -54,10 +52,10 @@
             class="flex flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 rtl:space-x-reverse gap-4 mt-"
           >
             <button
-              class="w-[205px] h-[46px] border border-[#6F4336] rounded-[16px] flex flex-row justify-center items-center p-0 gap-[16px] group transition-all duration-300 hover:bg-[#6F4336]/5 m-0"
+              class="w-[205px] h-[46px] border border-cs-uluru-sunset rounded-[16px] flex flex-row justify-center items-center p-0 gap-[16px] group transition-all duration-300 hover:bg-cs-uluru-sunset/5 m-0"
             >
               <span
-                class="font-quicksand font-medium text-[16px] leading-[140%] uppercase text-[#6F4336]"
+                class="font-quicksand font-medium text-[16px] leading-[140%] uppercase text-cs-uluru-sunset"
               >
                 {{ t("home.cta") }}
               </span>

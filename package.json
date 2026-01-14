@@ -1,5 +1,5 @@
 {
-	"name": "frontend-task",
+	"name": "coffe-shop",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
@@ -10,7 +10,12 @@
 		"format:src": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
 		"clean:empty": "find src -type f \\( -name \"*.vue\" -o -name \"*.ts\" -o -name \"*.json\" \\) -exec sed -i '/^$/d' {} +",
 		"clean:comments": "find src -type f -name \"*.vue\" -exec sed -i 's/<!--.*-->//g' {} +",
-		"deploy":"netlify deploy --prod --open "
+		"deploy": "netlify deploy --prod --open ",
+		"docker:build": "docker build -t coffe-shop .",
+		"docker:run": "docker run -p 3000:3000 coffe-shop",
+		"docker:stop": "docker stop coffe-shop",
+		"docker:remove": "docker rm coffe-shop",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"gsap": "^3.13.0",
@@ -27,11 +32,12 @@
 		"@types/node": "^25.0.8",
 		"@vitejs/plugin-vue": "^6.0.1",
 		"@vue/tsconfig": "^0.8.1",
+		"husky": "^9.1.7",
+		"jsrepo": "^3.0.10",
 		"prettier": "^3.7.4",
 		"tailwindcss": "4",
 		"typescript": "~5.9.3",
 		"vite": "^7.2.4",
-		"vue-tsc": "^3.1.4",
-		"jsrepo": "^3.0.10"
+		"vue-tsc": "^3.1.4"
 	}
 }
