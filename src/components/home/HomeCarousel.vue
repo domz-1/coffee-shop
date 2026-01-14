@@ -1,3 +1,34 @@
+<script setup lang="ts">
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Autoplay, Navigation } from "swiper/modules";
+import { useLang } from "@/composables/useLang";
+import AnimatedContent from "../vue-bits/AnimatedContent/AnimatedContent.vue";
+import "swiper/css";
+import "swiper/css/navigation";
+const { locale, dir } = useLang();
+const SwiperProducts = [
+  {
+    name: "Product 1",
+    image: "/hero/product2.png",
+    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
+  },
+  {
+    name: "Product 2",
+    image: "/hero/product1.png",
+    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
+  },
+  {
+    name: "Product 1 Duplicate",
+    image: "/hero/product2.png",
+    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
+  },
+  {
+    name: "Product 2 Duplicate",
+    image: "/hero/product1.png",
+    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
+  },
+];
+</script>
 <template>
   <div class="relative w-full h-full group translate-y-0 lg:translate-y-12">
     <swiper
@@ -64,7 +95,7 @@
         </button>
       </div>
       <swiper-slide
-        v-for="(product, index) in products"
+        v-for="(product, index) in SwiperProducts"
         :key="index"
         class="w-[300px] md:w-[450px]!"
       >
@@ -92,49 +123,15 @@
     </swiper>
   </div>
 </template>
-<script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay, Navigation } from "swiper/modules";
-import { useLang } from "@/composables/useLang";
-import AnimatedContent from "../AnimatedContent/AnimatedContent.vue";
-import "swiper/css";
-import "swiper/css/navigation";
-const { locale, dir } = useLang();
-const products = [
-  {
-    name: "Product 1",
-    image: "/hero/product2.png",
-    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
-  },
-  {
-    name: "Product 2",
-    image: "/hero/product1.png",
-    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
-  },
-  {
-    name: "Product 1 Duplicate",
-    image: "/hero/product2.png",
-    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
-  },
-  {
-    name: "Product 2 Duplicate",
-    image: "/hero/product1.png",
-    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
-  },
-];
-</script>
 <style scoped>
-/* Swiper overflow fix for custom layout */
 :deep(.swiper) {
   padding-top: 0;
 }
-
 @media (min-width: 768px) {
   :deep(.swiper) {
     padding-top: 50px !important;
   }
 }
-
 @media (min-width: 1024px) {
   :deep(.swiper) {
     padding-top: 0 !important;

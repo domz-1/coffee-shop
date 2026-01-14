@@ -1,3 +1,43 @@
+<script setup lang="ts">
+import { ref, onMounted, computed, watch } from "vue";
+import { useRoute } from "vue-router";
+import { useProductStore } from "@/stores/useProductStore";
+import { useCartStore } from "@/stores/useCartStore";
+import { useLang } from "@/composables/useLang";
+import type { Product } from "@/types";
+const route = useRoute();
+const productStore = useProductStore();
+const cartStore = useCartStore();
+const { t, locale, isRtl, dir } = useLang();
+const product = ref<Product | null>(null);
+const activeImage = ref("");
+const quantity = ref(1);
+const loading = ref(true);
+const allImages = computed(() => {
+  if (!product.value) return [];
+  return [product.value.image, ...(product.value.gallery || [])];
+});
+const loadProduct = () => {
+  loading.value = true;
+  const id = parseInt(route.params.id as string);
+  const found = productStore.getProductById(id);
+  if (found) {
+    product.value = found;
+    activeImage.value = found.image;
+    quantity.value = 1;
+  } else {
+    product.value = null;
+  }
+  loading.value = false;
+};
+onMounted(loadProduct);
+watch(() => route.params.id, loadProduct);
+const handleAddToCart = () => {
+  if (product.value) {
+    cartStore.addToCart(product.value, quantity.value);
+  }
+};
+</script>
 <template>
   <div class="min-h-screen bg-white font-quicksand" :dir="dir">
     <div class="pt-24 md:pt-32 px-4 max-w-[1440px] mx-auto">
@@ -297,51 +337,10 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-import { ref, onMounted, computed, watch } from "vue";
-import { useRoute } from "vue-router";
-import { useProductStore } from "@/stores/useProductStore";
-import { useCartStore } from "@/stores/useCartStore";
-import { useLang } from "@/composables/useLang";
-import type { Product } from "@/types";
-const route = useRoute();
-const productStore = useProductStore();
-const cartStore = useCartStore();
-const { t, locale, isRtl, dir } = useLang();
-const product = ref<Product | null>(null);
-const activeImage = ref("");
-const quantity = ref(1);
-const loading = ref(true);
-const allImages = computed(() => {
-  if (!product.value) return [];
-  return [product.value.image, ...(product.value.gallery || [])];
-});
-const loadProduct = () => {
-  loading.value = true;
-  const id = parseInt(route.params.id as string);
-  const found = productStore.getProductById(id);
-  if (found) {
-    product.value = found;
-    activeImage.value = found.image;
-    quantity.value = 1;
-  } else {
-    product.value = null;
-  }
-  loading.value = false;
-};
-onMounted(loadProduct);
-watch(() => route.params.id, loadProduct);
-const handleAddToCart = () => {
-  if (product.value) {
-    cartStore.addToCart(product.value, quantity.value);
-  }
-};
-</script>
 <style scoped>
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
-
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

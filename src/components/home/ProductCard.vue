@@ -1,3 +1,16 @@
+<script setup lang="ts">
+import type { Product } from "@/types";
+import { useLang } from "@/composables/useLang";
+const { locale } = useLang();
+defineProps<{
+  product: Product;
+}>();
+</script>
+<style scoped>
+.rounded-card {
+  border-radius: 50px;
+}
+</style>
 <template>
   <router-link
     :to="`/product/${product.id}`"
@@ -55,16 +68,3 @@
     </div>
   </router-link>
 </template>
-<script setup lang="ts">
-import type { Product } from "@/types";
-import { useLang } from "@/composables/useLang";
-const { locale } = useLang();
-defineProps<{
-  product: Product;
-}>();
-</script>
-<style scoped>
-.rounded-card {
-  border-radius: 50px;
-}
-</style>

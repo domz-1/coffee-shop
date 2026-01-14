@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import { useLang } from "@/composables/useLang";
+import { useCartStore } from "@/stores/useCartStore";
+const { locale, toggleLocale } = useLang();
+const cartStore = useCartStore();
+</script>
 <template>
   <header
     class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1440px] h-[76px] flex items-center justify-between px-6 md:px-[69px] z-50"
@@ -71,9 +77,3 @@
     </div>
   </header>
 </template>
-<script setup lang="ts">
-import { useLang } from "@/composables/useLang";
-import { useCartStore } from "@/stores/useCartStore";
-const { locale, toggleLocale } = useLang();
-const cartStore = useCartStore();
-</script>

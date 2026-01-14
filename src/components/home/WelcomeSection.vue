@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import { useLang } from "@/composables/useLang";
+const { t, dir } = useLang();
+</script>
 <template>
   <section
     class="py-16 md:py-24 lg:bg-[url('/why-us/image.png')] lg:bg-size-[675px_1010.85px] bg-no-repeat relative min-h-[100vh] lg:min-h-[200vh]"
@@ -225,10 +229,6 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-import { useLang } from "@/composables/useLang";
-const { t, dir } = useLang();
-</script>
 <style scoped>
 .font-quicksand {
   font-family: "Quicksand", sans-serif;

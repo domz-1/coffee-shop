@@ -1,3 +1,42 @@
+<script setup lang="ts">
+import { ref, computed } from "vue";
+import { useProductStore } from "@/stores/useProductStore";
+import { useLang } from "@/composables/useLang";
+import ProductCard from "./ProductCard.vue";
+import AnimatedContent from "../vue-bits/AnimatedContent/AnimatedContent.vue";
+const { t } = useLang();
+const productStore = useProductStore();
+const activeCategory = ref("all");
+const categoryList = [
+  { id: "all", labelKey: "home.categories.all", match: "All categories" },
+  {
+    id: "offers",
+    labelKey: "home.categories.specialOffers",
+    match: "Special offers",
+  },
+  {
+    id: "bestseller",
+    labelKey: "home.categories.bestSeller",
+    match: "Best seller",
+  },
+  { id: "roasting", labelKey: "home.categories.roasting", match: "Roasting" },
+  { id: "coffee", labelKey: "home.categories.coffee", match: "Coffee" },
+  {
+    id: "equipment",
+    labelKey: "home.categories.equipment",
+    match: "Coffee equipment",
+  },
+];
+const filteredProducts = computed(() => {
+  const selectedCat = categoryList.find((c) => c.id === activeCategory.value);
+  if (!selectedCat || selectedCat.id === "all") {
+    return productStore.products;
+  }
+  return productStore.products.filter(
+    (p) => p.category_en === selectedCat.match,
+  );
+});
+</script>
 <template>
   <section
     id="products"
@@ -48,45 +87,6 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-import { ref, computed } from "vue";
-import { useProductStore } from "@/stores/useProductStore";
-import { useLang } from "@/composables/useLang";
-import ProductCard from "./ProductCard.vue";
-import AnimatedContent from "../AnimatedContent/AnimatedContent.vue";
-const { t } = useLang();
-const productStore = useProductStore();
-const activeCategory = ref("all");
-const categoryList = [
-  { id: "all", labelKey: "home.categories.all", match: "All categories" },
-  {
-    id: "offers",
-    labelKey: "home.categories.specialOffers",
-    match: "Special offers",
-  },
-  {
-    id: "bestseller",
-    labelKey: "home.categories.bestSeller",
-    match: "Best seller",
-  },
-  { id: "roasting", labelKey: "home.categories.roasting", match: "Roasting" },
-  { id: "coffee", labelKey: "home.categories.coffee", match: "Coffee" },
-  {
-    id: "equipment",
-    labelKey: "home.categories.equipment",
-    match: "Coffee equipment",
-  },
-];
-const filteredProducts = computed(() => {
-  const selectedCat = categoryList.find((c) => c.id === activeCategory.value);
-  if (!selectedCat || selectedCat.id === "all") {
-    return productStore.products;
-  }
-  return productStore.products.filter(
-    (p) => p.category_en === selectedCat.match,
-  );
-});
-</script>
 <style scoped>
 .no-scrollbar::-webkit-scrollbar {
   display: none;

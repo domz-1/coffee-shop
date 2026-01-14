@@ -1,2 +1,6 @@
 bun run format:src
+bun run clean:comments
+bun run clean:empty
+bun run build
 git add .
+

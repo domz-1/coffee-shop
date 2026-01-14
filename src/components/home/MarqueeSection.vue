@@ -43,7 +43,6 @@ const isPaused = ref(false);
   direction: ltr !important;
   box-shadow: none;
 }
-
 [dir="rtl"] * {
   direction: ltr !important;
 }

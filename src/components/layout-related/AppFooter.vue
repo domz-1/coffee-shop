@@ -1,9 +1,13 @@
+<script setup lang="ts">
+import { useLang } from "@/composables/useLang";
+const { t, dir } = useLang();
+</script>
 <template>
   <footer
     class="bg-linear-to-r from-cs-medici-blue to-cs-deep-water text-white relative mt-20"
     :dir="dir"
   >
-    <!-- Overlapping Image -->
+    
     <div class="absolute top-[-80%] right-0 z-10">
       <img
         src="/footer/footer.png"
@@ -11,9 +15,8 @@
         class="object-contain drop-shadow-2xl max-w-[25vw] hidden lg:block"
       />
     </div>
-
     <div class="max-w-[654.62px] mx-auto px-4 py-20 pb-10">
-      <!-- 3 Columns of Links -->
+      
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
         <div class="flex flex-col gap-4 text-left rtl:text-right">
           <h3
@@ -39,7 +42,6 @@
             >
           </nav>
         </div>
-
         <div class="flex flex-col gap-4 text-left rtl:text-right">
           <h3
             class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
@@ -55,7 +57,6 @@
             </p>
           </div>
         </div>
-
         <div class="flex flex-col gap-4 text-left rtl:text-right">
           <h3
             class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
@@ -74,10 +75,8 @@
           </div>
         </div>
       </div>
-
       <div class="w-full h-[1px] bg-white opacity-20 my-10"></div>
-
-      <!-- Bottom Bar with Copyright and Socials -->
+      
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
           <p class="text-[10px] opacity-60 font-sans tracking-wide uppercase">
@@ -90,8 +89,7 @@
             >{{ t("footer.privacy") }}</router-link
           >
         </div>
-
-        <!-- Social Icons beside copyright -->
+        
         <div class="flex gap-3">
           <a
             href="#"
@@ -128,7 +126,3 @@
     </div>
   </footer>
 </template>
-<script setup lang="ts">
-import { useLang } from "@/composables/useLang";
-const { t, dir } = useLang();
-</script>
