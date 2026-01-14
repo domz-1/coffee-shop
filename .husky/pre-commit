@@ -1,6 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-echo "Running prettier to format files..."
 bun run format:src
 git add .
