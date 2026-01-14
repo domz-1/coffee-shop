@@ -1,58 +1,109 @@
 <template>
-  <footer class="app-footer text-white">
+  <footer class="bg-linear-to-r from-[#004876] to-[#1e71a6] text-white">
     <div class="max-w-[1240px] mx-auto px-4 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-        <!-- Menu Column -->
         <div class="flex flex-col gap-6">
-          <h3 class="footer-heading">Menu</h3>
+          <h3
+            class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
+          >
+            Menu
+          </h3>
           <nav class="flex flex-col gap-4">
-            <router-link to="/" class="footer-link">Get inspired</router-link>
-            <router-link to="/" class="footer-link">Our products</router-link>
-            <router-link to="/" class="footer-link"
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+              >Get inspired</router-link
+            >
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+              >Our products</router-link
+            >
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
               >For a better world</router-link
             >
-            <router-link to="/" class="footer-link">Contact</router-link>
-            <router-link to="/" class="footer-link">Blog</router-link>
-            <router-link to="/" class="footer-link">FAQ</router-link>
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+              >Contact</router-link
+            >
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+              >Blog</router-link
+            >
+            <router-link
+              to="/"
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+              >FAQ</router-link
+            >
           </nav>
         </div>
-        <!-- Store Locator Column -->
         <div class="flex flex-col gap-6">
-          <h3 class="footer-heading">Cafe Location</h3>
+          <h3
+            class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
+          >
+            Cafe Location
+          </h3>
           <div class="flex flex-col gap-4">
-            <p class="footer-link opacity-100">We are available in</p>
-            <p class="footer-link">lorem ipsum</p>
+            <p
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white transition-colors duration-200 ease-out"
+            >
+              We are available in
+            </p>
+            <p
+              class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
+            >
+              lorem ipsum
+            </p>
           </div>
         </div>
-        <!-- Contact Column -->
         <div class="flex flex-col gap-6">
-          <h3 class="footer-heading">Contact</h3>
+          <h3
+            class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
+          >
+            Contact
+          </h3>
           <div class="flex flex-col gap-4">
             <div class="flex flex-col">
-              <p class="footer-link opacity-100">
+              <p
+                class="font-['Inter'] font-medium text-[14px] leading-normal text-white transition-colors duration-200 ease-out"
+              >
                 Do you have a question? Send it to us!
               </p>
               <a
                 href="mailto:info@example.com"
-                class="footer-link hover:text-white transition-colors underline"
+                class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white underline"
                 >info@example.com</a
               >
             </div>
             <div class="flex flex-col">
-              <p class="footer-link opacity-100">Phone</p>
+              <p
+                class="font-['Inter'] font-medium text-[14px] leading-normal text-white transition-colors duration-200 ease-out"
+              >
+                Phone
+              </p>
               <a
                 href="tel:000000000"
-                class="footer-link hover:text-white transition-colors"
+                class="font-['Inter'] font-medium text-[14px] leading-normal text-white/60 transition-colors duration-200 ease-out hover:text-white"
                 >000000000</a
               >
             </div>
           </div>
         </div>
-        <!-- Right info/Social -->
         <div class="flex flex-col gap-6 lg:items-end">
-          <h3 class="footer-heading">Social Media</h3>
+          <h3
+            class="font-['Cormorant_Infant'] font-semibold text-[18px] leading-[22px] tracking-[1px] capitalize"
+          >
+            Social Media
+          </h3>
           <div class="flex gap-4">
-            <a href="#" class="social-circle group">
+            <a
+              href="#"
+              class="w-[36px] h-[36px] border-[1.5px] border-white/60 rounded-full flex items-center justify-center transition-all duration-200 hover:border-white hover:bg-white/10 group"
+            >
               <svg
                 class="w-4 h-4 text-white group-hover:scale-110 transition-transform"
                 fill="currentColor"
@@ -63,7 +114,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="social-circle group">
+            <a
+              href="#"
+              class="w-[36px] h-[36px] border-[1.5px] border-white/60 rounded-full flex items-center justify-center transition-all duration-200 hover:border-white hover:bg-white/10 group"
+            >
               <svg
                 class="w-4 h-4 text-white group-hover:scale-110 transition-transform"
                 fill="currentColor"
@@ -74,7 +128,10 @@
                 />
               </svg>
             </a>
-            <a href="#" class="social-circle group">
+            <a
+              href="#"
+              class="w-[36px] h-[36px] border-[1.5px] border-white/60 rounded-full flex items-center justify-center transition-all duration-200 hover:border-white hover:bg-white/10 group"
+            >
               <svg
                 class="w-4 h-4 text-white group-hover:scale-110 transition-transform"
                 fill="currentColor"
@@ -88,11 +145,13 @@
           </div>
         </div>
       </div>
-      <!-- Divider -->
-      <div class="w-full h-[1px] bg-white opacity-40 my-10 divider"></div>
-      <!-- Bottom -->
+      <div class="w-full h-[1px] bg-white opacity-40 my-10 max-w-[654px]"></div>
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-        <router-link to="/" class="privacy-link">Privacy policy</router-link>
+        <router-link
+          to="/"
+          class="font-['Inter'] font-medium text-[10px] leading-none tracking-[2.4px] uppercase text-white/60 transition-colors duration-200 ease-out hover:text-white"
+          >Privacy policy</router-link
+        >
         <p class="text-xs opacity-60 font-sans tracking-wide uppercase">
           © {{ new Date().getFullYear() }} Coffee Shop. All rights reserved.
         </p>
@@ -101,57 +160,3 @@
   </footer>
 </template>
 <script setup lang="ts"></script>
-<style scoped>
-.app-footer {
-  background: linear-gradient(90deg, #004876 0%, #1e71a6 100%);
-}
-.footer-heading {
-  font-family: "Cormorant Infant", serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-}
-.footer-link {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.584);
-  transition: color 0.2s ease;
-}
-.footer-link:hover {
-  color: #ffffff;
-}
-.social-circle {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid rgba(255, 255, 255, 0.584);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-.social-circle:hover {
-  border-color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-}
-.privacy-link {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 1;
-  letter-spacing: 2.4px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.584);
-  transition: color 0.2s ease;
-}
-.privacy-link:hover {
-  color: #ffffff;
-}
-.divider {
-  max-width: 654px;
-}
-</style>

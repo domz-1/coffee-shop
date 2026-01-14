@@ -22,13 +22,3 @@ watchEffect(() => {
   document.documentElement.lang = locale.value;
 });
 </script>
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-</style>

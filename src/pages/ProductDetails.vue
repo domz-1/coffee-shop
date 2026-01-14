@@ -1,13 +1,12 @@
 <template>
   <div
     v-if="product"
-    class="product-details pb-20 pt-10 px-4 max-w-[1240px] mx-auto min-h-screen"
+    class="pb-20 pt-10 px-4 max-w-[1240px] mx-auto min-h-screen"
   >
-    <!-- Breadcrumb -->
     <div class="mb-8">
       <router-link
         to="/"
-        class="text-[#8B8BA5] font-quicksand hover:text-[#004876] transition-colors flex items-center gap-2"
+        class="text-[#8B8BA5] font-['Quicksand'] hover:text-[#004876] transition-colors flex items-center gap-2"
       >
         <svg
           width="20"
@@ -23,10 +22,8 @@
       </router-link>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-      <!-- Left Column: Gallery -->
       <div class="flex flex-col gap-6">
         <div class="relative group">
-          <!-- Main Image Frame (Home page style) -->
           <div class="relative w-full aspect-square max-w-[500px] mx-auto">
             <div
               class="absolute inset-0 bg-[#004876] rounded-[60px] translate-x-2 translate-y-2"
@@ -45,7 +42,6 @@
             </div>
           </div>
         </div>
-        <!-- Thumbnail Gallery -->
         <div class="flex gap-4 justify-center overflow-x-auto py-2">
           <button
             v-for="(img, idx) in allImages"
@@ -62,40 +58,39 @@
           </button>
         </div>
       </div>
-      <!-- Right Column: Product Info -->
       <div class="flex flex-col">
         <span
-          class="text-[#004876] font-poppins font-medium text-sm tracking-wider uppercase mb-2"
+          class="text-[#004876] font-['Poppins'] font-medium text-sm tracking-wider uppercase mb-2"
           >{{ product.category }}</span
         >
         <h1
-          class="text-[#3B2F2F] font-quicksand font-bold text-4xl lg:text-5xl mb-4"
+          class="text-[#3B2F2F] font-['Quicksand'] font-bold text-4xl lg:text-5xl mb-4"
         >
           {{ product.name }}
         </h1>
-        <p class="text-[#8B8BA5] font-quicksand text-lg mb-6 leading-relaxed">
+        <p
+          class="text-[#8B8BA5] font-['Quicksand'] text-lg mb-6 leading-relaxed"
+        >
           {{ product.description }}
         </p>
-        <!-- Pricing -->
         <div class="flex items-center gap-4 mb-8">
           <div class="flex flex-col">
             <span
               v-if="product.discount > 0"
-              class="text-[#8B8BA5] line-through text-lg font-poppins"
+              class="text-[#8B8BA5] line-through text-lg font-['Poppins']"
               >${{ product.price.toFixed(2) }}</span
             >
-            <span class="text-[#3B2F2F] font-bold text-3xl font-poppins"
+            <span class="text-[#3B2F2F] font-bold text-3xl font-['Poppins']"
               >${{ (product.price - product.discount).toFixed(2) }}</span
             >
           </div>
           <span
             v-if="product.discount > 0"
-            class="bg-[#F9EDBD] text-[#3B2F2F] px-4 py-1 rounded-full font-poppins text-sm font-medium"
+            class="bg-[#F9EDBD] text-[#3B2F2F] px-4 py-1 rounded-full font-['Poppins'] text-sm font-medium"
           >
             Save ${{ product.discount.toFixed(2) }}
           </span>
         </div>
-        <!-- Quantity & Add to Cart -->
         <div class="flex flex-col sm:flex-row gap-6 items-center mb-12">
           <div
             class="flex items-center border-2 border-[#E5E7EB] rounded-2xl p-1 bg-white shadow-sm"
@@ -107,7 +102,7 @@
               <span class="text-2xl">-</span>
             </button>
             <span
-              class="w-12 text-center font-bold text-xl text-[#3B2F2F] font-poppins"
+              class="w-12 text-center font-bold text-xl text-[#3B2F2F] font-['Poppins']"
               >{{ quantity }}</span
             >
             <button
@@ -119,12 +114,11 @@
           </div>
           <button
             @click="handleAddToCart"
-            class="flex-1 w-full bg-[#004876] text-white py-4 px-8 rounded-2xl font-quicksand font-bold text-xl shadow-lg hover:bg-[#00365a] transition-all hover:-translate-y-1 active:translate-y-0"
+            class="flex-1 w-full bg-[#004876] text-white py-4 px-8 rounded-2xl font-['Quicksand'] font-bold text-xl shadow-lg hover:bg-[#00365a] transition-all hover:-translate-y-1 active:translate-y-0"
           >
             Add to Cart
           </button>
         </div>
-        <!-- Product Author/Origin -->
         <div class="flex items-center gap-4 pt-8 border-t border-gray-100">
           <div
             class="w-12 h-12 bg-[#F9EDBD] rounded-full flex items-center justify-center text-[#3B2F2F] font-bold"
@@ -132,23 +126,22 @@
             {{ product.author.charAt(0) }}
           </div>
           <div>
-            <p class="text-[#8B8BA5] font-quicksand text-sm">
+            <p class="text-[#8B8BA5] font-['Quicksand'] text-sm">
               Responsibly sourced by
             </p>
-            <p class="text-[#3B2F2F] font-quicksand font-bold">
+            <p class="text-[#3B2F2F] font-['Quicksand'] font-bold">
               {{ product.author }}
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- Reviews Section -->
     <div class="mt-24 border-t border-gray-100 pt-16">
       <div
         class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6"
       >
         <div>
-          <h2 class="text-[#3B2F2F] font-quicksand font-bold text-3xl mb-2">
+          <h2 class="text-[#3B2F2F] font-['Quicksand'] font-bold text-3xl mb-2">
             Customer Reviews
           </h2>
           <div class="flex items-center gap-2">
@@ -166,16 +159,16 @@
                 />
               </svg>
             </div>
-            <span class="text-[#3B2F2F] font-quicksand font-medium"
+            <span class="text-[#3B2F2F] font-['Quicksand'] font-medium"
               >4.8 out of 5</span
             >
-            <span class="text-[#8B8BA5] font-quicksand"
+            <span class="text-[#8B8BA5] font-['Quicksand']"
               >({{ product.reviews?.length || 0 }} reviews)</span
             >
           </div>
         </div>
         <button
-          class="text-[#004876] font-quicksand font-bold border-2 border-[#004876] px-6 py-3 rounded-xl hover:bg-[#004876] hover:text-white transition-all"
+          class="text-[#004876] font-['Quicksand'] font-bold border-2 border-[#004876] px-6 py-3 rounded-xl hover:bg-[#004876] hover:text-white transition-all"
         >
           Write a Review
         </button>
@@ -202,12 +195,12 @@
                 />
               </svg>
             </div>
-            <span class="text-[#8B8BA5] text-sm font-poppins"
+            <span class="text-[#8B8BA5] text-sm font-['Poppins']"
               >Verified Purchase</span
             >
           </div>
           <p
-            class="text-[#3B2F2F] font-quicksand italic text-lg leading-relaxed"
+            class="text-[#3B2F2F] font-['Quicksand'] italic text-lg leading-relaxed"
           >
             "{{ review.comment }}"
           </p>
@@ -217,7 +210,7 @@
             >
               {{ review.user.charAt(0) }}
             </div>
-            <span class="text-[#3B2F2F] font-quicksand font-bold">{{
+            <span class="text-[#3B2F2F] font-['Quicksand'] font-bold">{{
               review.user
             }}</span>
           </div>
@@ -229,7 +222,7 @@
     <div
       class="animate-spin rounded-full h-12 w-12 border-b-2 border-[#004876] mb-4"
     ></div>
-    <p class="text-[#8B8BA5] font-quicksand">Loading product details...</p>
+    <p class="text-[#8B8BA5] font-['Quicksand']">Loading product details...</p>
   </div>
 </template>
 <script setup lang="ts">
@@ -262,11 +255,3 @@ const handleAddToCart = () => {
   }
 };
 </script>
-<style scoped>
-.font-quicksand {
-  font-family: "Quicksand", sans-serif;
-}
-.font-poppins {
-  font-family: "Poppins", sans-serif;
-}
-</style>

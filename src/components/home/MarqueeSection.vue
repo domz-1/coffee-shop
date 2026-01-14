@@ -6,11 +6,11 @@ const isPaused = ref(false);
 </script>
 <template>
   <section
-    class="marquee-section"
+    class="w-full overflow-hidden bg-[#fdfdfd] py-[20px] border-b border-[#f2f2f2] cursor-pointer [&_.vue-marquee-slider]:h-[28px] [&_.vue-marquee-slider]:flex [&_.vue-marquee-slider]:items-center"
     @mouseenter="isPaused = true"
     @mouseleave="isPaused = false"
   >
-    <div class="marquee-container">
+    <div class="w-full">
       <VueMarqueeSlider
         id="coffee-marquee"
         :speed="12000"
@@ -20,37 +20,18 @@ const isPaused = ref(false);
         :repeat="20"
       >
         <template v-for="i in 10" :key="i">
-          <img src="/marquee/peen.png" alt="Bean" class="marquee-asset" />
+          <img
+            src="/marquee/peen.png"
+            alt="Bean"
+            class="h-[28px] w-auto object-contain block"
+          />
           <img
             src="/marquee/text.png"
             alt="Coffee House"
-            class="marquee-asset"
+            class="h-[28px] w-auto object-contain block"
           />
         </template>
       </VueMarqueeSlider>
     </div>
   </section>
 </template>
-<style scoped>
-.marquee-section {
-  width: 100%;
-  overflow: hidden;
-  background-color: #fdfdfd;
-  padding: 20px 0;
-  border-bottom: 1px solid #f2f2f2;
-  cursor: pointer;
-}
-.marquee-container {
-  width: 100%;
-}
-.marquee-asset {
-  height: 28px;
-  width: auto;
-  object-fit: contain;
-  display: block;
-}
-:deep(.vue-marquee-slider) {
-  height: 28px;
-  align-items: center;
-}
-</style>

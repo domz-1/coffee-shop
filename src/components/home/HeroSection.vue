@@ -1,6 +1,5 @@
 <template>
   <div class="h-screen flex items-center justify-center px-4 md:px-[69px]">
-    <!-- Redesigned Hero Section -->
     <div class="absolute top-[-60%] right-[-10%] w-2/3 h-full z-0">
       <img
         src="../../../public/hero/beside-the-carousel.png"
@@ -11,14 +10,12 @@
     <section
       class="relative w-full max-w-[100vm] h-[720px] flex items-center overflow-hidden rounded-[48px] shadow-sm"
     >
-      <!-- Background Shapes -->
       <div
         class="relative z-10 w-full px-6 md:px-20 flex justify-between items-center h-full gap-12"
       >
-        <!-- Content -->
         <div class="space-y-8 duration-1000">
           <div class="">
-            <h1 class="flex items-center !h-fit">
+            <h1 class="flex items-center h-fit!">
               <img
                 src="../../../public/hero/main-logo-hero.png"
                 class="max-w-[351px]"
@@ -72,83 +69,15 @@
             </button>
           </div>
         </div>
-        <!-- Visuals -->
         <div
-          class="flex-1 h-full flex items-center justify-end overflow-hidden max-w-[800px]"
+          class="flex-1 h-full flex items-center justify-end overflow-hidden max-w-[800px] pl-16"
         >
-          <swiper
-            :modules="[Autoplay]"
-            :slides-per-view="'auto'"
-            :centered-slides="true"
-            :loop="true"
-            :autoplay="{ delay: 3000, disableOnInteraction: false }"
-            :space-between="40"
-            class="hero-swiper w-full overflow-visible!"
-          >
-            <swiper-slide
-              v-for="(product, index) in products"
-              :key="index"
-              class="w-[450px]!"
-            >
-              <div
-                class="relative flex justify-center items-center h-[600px] transition-all duration-700 ease-out product-container"
-              >
-                <div
-                  class="absolute w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] bg-[#004876] rounded-full z-0 transition-transform duration-700 bg-circle"
-                ></div>
-                <img
-                  :src="product.image"
-                  :alt="product.name"
-                  class="relative z-10 w-[450px] object-contain drop-shadow-2xl transition-transform duration-700 product-img"
-                />
-              </div>
-            </swiper-slide>
-          </swiper>
+          <HeroCarousel />
         </div>
       </div>
     </section>
   </div>
 </template>
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
-const products = [
-  { name: "Product 1", image: "/hero/product1.png" },
-  { name: "Product 2", image: "/hero/product2.png" },
-  { name: "Product 1 Duplicate", image: "/hero/product1.png" },
-  { name: "Product 2 Duplicate", image: "/hero/product2.png" },
-];
+import HeroCarousel from "./HeroCarousel.vue";
 </script>
-<style scoped>
-.hero-swiper :deep(.swiper-slide) {
-  opacity: 0.4;
-  transition: opacity 0.7s ease;
-}
-.hero-swiper :deep(.swiper-slide-active) {
-  opacity: 1;
-}
-.hero-swiper :deep(.swiper-slide) .product-container {
-  transform: scale(0.6);
-}
-.hero-swiper :deep(.swiper-slide-active) .product-container {
-  transform: scale(1);
-}
-.hero-swiper :deep(.swiper-slide-next) .product-container,
-.hero-swiper :deep(.swiper-slide-prev) .product-container {
-  transform: scale(0.7);
-}
-.animate-in {
-  animation: fadeIn 1s ease-out forwards;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>

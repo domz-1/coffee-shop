@@ -2,7 +2,6 @@
   <header
     class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1440px] h-[76px] flex items-center justify-between px-6 md:px-[69px] z-50"
   >
-    <!-- Logo -->
     <router-link to="/" class="flex items-center">
       <img
         src="/hero/top-simple-logo.png"
@@ -10,9 +9,7 @@
         class="w-[34.5px] object-contain"
       />
     </router-link>
-    <!-- Actions (Cart & Toggle) -->
     <div class="flex items-center space-x-4 rtl:space-x-reverse">
-      <!-- Cart Section -->
       <div
         class="flex items-center space-x-[11px] rtl:space-x-reverse gap-[11px]"
       >
@@ -23,11 +20,9 @@
           {{ locale === "en" ? "ع" : "EN" }}
         </button>
         <router-link to="/" class="relative flex items-center justify-center">
-          <!-- Ellipse 81 -->
           <div
             class="w-[28px] h-[28px] bg-[#004876] rounded-full flex items-center justify-center shadow-lg"
           >
-            <!-- Shopping Bag Icon -->
             <svg
               width="14"
               height="16"
@@ -48,7 +43,6 @@
                 stroke-linecap="round"
               />
             </svg>
-            <!-- Cart Badge -->
             <span
               v-if="cartStore.totalItems > 0"
               class="absolute -top-1 -right-1 bg-amber-600 text-white text-[8px] rounded-full h-3.5 w-3.5 flex items-center justify-center font-bold"
@@ -57,7 +51,6 @@
             </span>
           </div>
         </router-link>
-        <!-- Menu Icon -->
         <button class="text-black cursor-pointer">
           <svg
             width="24"

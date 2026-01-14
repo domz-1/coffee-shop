@@ -1,24 +1,22 @@
 <template>
-  <section class="products-section py-20 px-4 max-w-[1240px] mx-auto">
-    <!-- Header -->
+  <section class="py-20 px-4 max-w-[1240px] mx-auto">
     <div class="text-center mb-12">
-      <p class="text-[#3B2F2F] font-quicksand font-normal text-xl mb-1">
+      <p class="text-[#3B2F2F] font-['Quicksand'] font-normal text-xl mb-1">
         Our products
       </p>
       <h2
-        class="text-[#3B2F2F] font-quicksand font-bold text-[32px] leading-10"
+        class="text-[#3B2F2F] font-['Quicksand'] font-bold text-[32px] leading-10"
       >
         Special to Try
       </h2>
     </div>
-    <!-- Tabs -->
     <div class="flex justify-center mb-16 overflow-x-auto">
       <div class="flex gap-8 pb-4 relative">
         <button
           v-for="category in categories"
           :key="category"
           @click="activeCategory = category"
-          class="text-xl font-medium whitespace-nowrap transition-colors"
+          class="font-['Quicksand'] text-xl font-medium whitespace-nowrap transition-colors"
           :class="
             activeCategory === category
               ? 'text-[#004876]'
@@ -34,7 +32,6 @@
         </button>
       </div>
     </div>
-    <!-- Grid -->
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 justify-items-center"
     >
@@ -72,11 +69,3 @@ const underlineStyle = computed(() => {
   return {};
 });
 </script>
-<style scoped>
-.font-quicksand {
-  font-family: "Quicksand", sans-serif;
-}
-button {
-  font-family: "Quicksand", sans-serif;
-}
-</style>
