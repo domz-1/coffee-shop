@@ -56,5 +56,27 @@
     "social": "Social Media",
     "privacy": "Privacy policy",
     "rights": "All rights reserved."
+  },
+  "welcome": {
+    "title": "Welcome to Our shop",
+    "subtitle": "The coffee you want, when you want it",
+    "features": {
+      "quality": {
+        "title": "quality",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "easy": {
+        "title": "Easy",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "taste": {
+        "title": "taste",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      },
+      "quick": {
+        "title": "quick",
+        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      }
+    }
   }
 }
