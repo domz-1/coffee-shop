@@ -11,11 +11,9 @@
     <AppFooter />
   </div>
 </template>
-
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 import AppNavbar from "@/components/layout-related/AppNavbar.vue";
 import AppFooter from "@/components/layout-related/AppFooter.vue";
-
 const { dir } = useLang();
 </script>

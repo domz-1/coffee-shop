@@ -22,20 +22,23 @@ const router = createRouter({
     return { top: 0 };
   },
 });
-
-
 router.beforeEach((to, from, next) => {
   const langStore = useLangStore();
-  const lang = (to.query.lang as string) || (from.query.lang as string) || langStore.currentLocale;
-
+  const lang =
+    (to.query.lang as string) ||
+    (from.query.lang as string) ||
+    langStore.currentLocale;
   if (lang && to.query.lang !== lang) {
     next({ ...to, query: { ...to.query, lang } });
   } else {
-    if (to.query.lang && (to.query.lang === 'en' || to.query.lang === 'ar') && to.query.lang !== langStore.currentLocale) {
+    if (
+      to.query.lang &&
+      (to.query.lang === "en" || to.query.lang === "ar") &&
+      to.query.lang !== langStore.currentLocale
+    ) {
       langStore.currentLocale = to.query.lang;
     }
     next();
   }
 });
-
 export default router;

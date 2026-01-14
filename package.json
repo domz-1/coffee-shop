@@ -9,7 +9,8 @@
 		"preview": "vite preview",
 		"format:src": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
 		"clean:empty": "find src -type f \\( -name \"*.vue\" -o -name \"*.ts\" -o -name \"*.json\" \\) -exec sed -i '/^$/d' {} +",
-		"clean:comments": "find src -type f -name \"*.vue\" -exec sed -i 's/<!--.*-->//g' {} +"
+		"clean:comments": "find src -type f -name \"*.vue\" -exec sed -i 's/<!--.*-->//g' {} +",
+		"deploy":"netlify deploy --prod --open "
 	},
 	"dependencies": {
 		"gsap": "^3.13.0",
