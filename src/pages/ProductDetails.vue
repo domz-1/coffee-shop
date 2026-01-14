@@ -4,6 +4,9 @@ import { useRoute } from "vue-router";
 import { useProductStore } from "@/stores/useProductStore";
 import { useCartStore } from "@/stores/useCartStore";
 import { useLang } from "@/composables/useLang";
+import IconArrowLeft from "@/components/icons/IconArrowLeft.vue";
+import IconStar from "@/components/icons/IconStar.vue";
+import IconAlertCircle from "@/components/icons/IconAlertCircle.vue";
 import type { Product } from "@/types";
 const route = useRoute();
 const productStore = useProductStore();
@@ -45,18 +48,10 @@ const handleAddToCart = () => {
         to="/"
         class="text-cs-delicate-violet font-quicksand hover:text-cs-medici-blue transition-colors flex items-center gap-2 group"
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
+        <IconArrowLeft
           class="transform group-hover:-translate-x-1 rtl:group-hover:translate-x-1 transition-transform"
           :class="isRtl ? 'rotate-180' : ''"
-        >
-          <path d="M19 12H5M12 19l-7-7 7-7" />
-        </svg>
+        />
         <span class="font-medium">{{ t("product.back") }}</span>
       </router-link>
     </div>
@@ -211,18 +206,7 @@ const handleAddToCart = () => {
             </h2>
             <div class="flex items-center gap-2">
               <div class="flex text-cs-gilded-age">
-                <svg
-                  v-for="i in 5"
-                  :key="i"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                  />
-                </svg>
+                <IconStar v-for="i in 5" :key="i" />
               </div>
               <span class="text-cs-smoked-black-coffee font-quicksand font-bold"
                 >4.8 {{ t("product.outOf5") }}</span
@@ -248,20 +232,14 @@ const handleAddToCart = () => {
           >
             <div class="flex justify-between items-center">
               <div class="flex gap-1 text-cs-gilded-age">
-                <svg
+                <IconStar
                   v-for="i in 5"
                   :key="i"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  :fill="i <= review.rating ? 'currentColor' : 'none'"
-                  stroke="currentColor"
-                  stroke-width="1"
-                >
-                  <path
-                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-                  />
-                </svg>
+                  class="w-[18px] h-[18px]"
+                  :class="
+                    i <= review.rating ? 'text-cs-gilded-age' : 'text-gray-300'
+                  "
+                />
               </div>
               <span
                 class="text-cs-delicate-violet text-xs font-quicksand font-bold uppercase tracking-wider"
@@ -309,18 +287,7 @@ const handleAddToCart = () => {
       <div
         class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mb-6"
       >
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#8B8BA5"
-          stroke-width="2"
-        >
-          <circle cx="12" cy="12" r="10" />
-          <line x1="12" y1="8" x2="12" y2="12" />
-          <line x1="12" y1="16" x2="12.01" y2="16" />
-        </svg>
+        <IconAlertCircle class="text-[#8B8BA5]" />
       </div>
       <h2 class="text-cs-smoked-black-coffee font-bold text-2xl mb-2">
         {{ t("product.notFound") }}

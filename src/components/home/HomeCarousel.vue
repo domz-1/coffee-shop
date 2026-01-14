@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { SwiperProducts } from "@/lib/constants";
 const { locale, dir } = useLang();
+import IconArrowCircleLeft from "@/components/icons/IconArrowCircleLeft.vue";
+import IconArrowCircleRight from "@/components/icons/IconArrowCircleRight.vue";
 </script>
 <template>
   <div class="relative w-full h-full group translate-y-0 lg:translate-y-12">
@@ -28,48 +30,10 @@ const { locale, dir } = useLang();
         class="absolute top-[10%] lg:top-[15%] right-4 md:right-[70px] rtl:right-auto rtl:left-4 rtl:md:left-[70px] flex flex-row items-start p-0 gap-2 w-auto h-[33px] z-30"
       >
         <button class="swiper-button-prev-custom" aria-label="Previous slide">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="rtl:rotate-180"
-          >
-            <path
-              d="M13.3337 20L19.167 25.8334M26.667 20H13.3337H26.667ZM13.3337 20L19.167 14.1667L13.3337 20Z"
-              stroke="#3B2F2F"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M20.0003 36.6666C10.7957 36.6666 3.33366 29.2046 3.33366 20C3.33366 10.7952 10.7957 3.33331 20.0003 3.33331C29.2051 3.33331 36.667 10.7952 36.667 20C36.667 29.2046 29.2051 36.6666 20.0003 36.6666Z"
-              stroke="#3B2F2F"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <IconArrowCircleLeft class="rtl:rotate-180" />
         </button>
         <button class="swiper-button-next-custom" aria-label="Next slide">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="rtl:rotate-180"
-          >
-            <path
-              d="M19.9997 36.6666C29.2043 36.6666 36.6663 29.2046 36.6663 20C36.6663 10.7952 29.2043 3.33331 19.9997 3.33331C10.7949 3.33331 3.33301 10.7952 3.33301 20C3.33301 29.2046 10.7949 36.6666 19.9997 36.6666Z"
-              fill="#004876"
-            />
-            <path
-              d="M26.6663 20L20.833 25.8334M13.333 20H26.6663H13.333ZM26.6663 20L20.833 14.1667L26.6663 20Z"
-              stroke="white"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <IconArrowCircleRight class="rtl:rotate-180" />
         </button>
       </div>
       <swiper-slide

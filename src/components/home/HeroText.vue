@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 const { t } = useLang();
+import IconArrowDiagonal from "@/components/icons/IconArrowDiagonal.vue";
+import IconQuickActions from "@/components/icons/IconQuickActions.vue";
 </script>
 <template>
   <div
@@ -36,22 +38,9 @@ const { t } = useLang();
         >
           {{ t("home.cta") }}
         </span>
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+        <IconArrowDiagonal
           class="transform group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform rtl:group-hover:-translate-x-0.5"
-        >
-          <path
-            d="M4 4L12 12M12 12H7M12 12V7"
-            stroke="#6F4336"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        />
       </button>
       <button
         class="w-[46px] h-[46px] relative flex items-center justify-center group"
@@ -64,23 +53,7 @@ const { t } = useLang();
           fill="#004876"
           class="absolute w-full h-full"
         />
-        <svg
-          width="46"
-          height="46"
-          viewBox="0 0 46 46"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="relative z-10"
-        >
-          <circle cx="23" cy="23" r="23" fill="#004876" />
-          <path
-            d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2V6l-3-4H6z M3 6h18 M16 10a4 4 0 0 1-8 0"
-            stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
+        <IconQuickActions class="relative z-10" />
       </button>
     </div>
   </div>

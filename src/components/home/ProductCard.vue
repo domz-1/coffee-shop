@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Product } from "@/types";
 import { useLang } from "@/composables/useLang";
+import IconStar from "@/components/icons/IconStar.vue";
 const { locale } = useLang();
 defineProps<{
   product: Product;
@@ -64,11 +65,7 @@ defineProps<{
       </p>
       <div class="flex gap-1 mt-3 justify-center">
         <span v-for="i in 5" :key="i" class="text-cs-gilded-age">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-            />
-          </svg>
+          <IconStar />
         </span>
       </div>
     </div>
