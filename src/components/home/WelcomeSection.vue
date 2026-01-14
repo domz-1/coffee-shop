@@ -4,12 +4,15 @@ const { t, dir } = useLang();
 </script>
 <template>
   <section
-    class="py-16 md:py-24 lg:bg-[url('/why-us/image.png')] lg:bg-size-[675px_1010.85px] bg-no-repeat relative min-h-[100vh] lg:min-h-[200vh]"
+    class="py-16 md:py-24 lg:bg-[url('/why-us/image.webp')] lg:bg-size-[675px_1010.85px] bg-no-repeat relative min-h-[100vh] lg:min-h-[200vh]"
     :dir="dir"
   >
     <img
       src="/why-us/peens.png"
-      alt="peens"
+      alt=""
+      width="200"
+      height="200"
+      loading="lazy"
       class="absolute bottom-[10%] right-4 w-[200px] hidden lg:block"
     />
     <div class="max-w-[1240px] mx-auto px-4">
@@ -19,8 +22,11 @@ const { t, dir } = useLang();
         <div class="w-full lg:w-1/2 relative">
           <div class="relative z-10">
             <img
-              src="/home/welcome-coffee-bags.png"
+              src="/home/welcome-coffee-bags.webp"
               alt="Welcome to Our Shop"
+              width="600"
+              height="400"
+              loading="lazy"
               class="w-full h-auto rounded-2xl min-w-[1010px] -translate-x-12 translate-y-[70%] lg:-translate-x-[25%] lg:translate-y-[0%] lg:rtl:translate-x-[25%]"
             />
           </div>

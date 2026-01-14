@@ -2,7 +2,6 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, Navigation } from "swiper/modules";
 import { useLang } from "@/composables/useLang";
-import AnimatedContent from "../vue-bits/AnimatedContent/AnimatedContent.vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import { SwiperProducts } from "@/lib/constants";
@@ -78,12 +77,7 @@ const { locale, dir } = useLang();
         :key="index"
         class="w-[300px] md:w-[450px]!"
       >
-        <AnimatedContent
-          direction="vertical"
-          :distance="50"
-          :delay="index * 0.1"
-          class="w-full flex justify-center"
-        >
+        <div class="w-full flex justify-center">
           <div
             class="relative flex justify-center items-center h-[400px] md:h-[600px] transition-all duration-700 ease-out product-container font-quicksand"
           >
@@ -94,10 +88,14 @@ const { locale, dir } = useLang();
             <img
               :src="product.image"
               :alt="product.name"
+              width="600"
+              height="600"
+              :loading="index === 0 ? 'eager' : 'lazy'"
+              :fetchpriority="index === 0 ? 'high' : 'auto'"
               class="relative z-10 w-full max-w-[280px] md:max-w-none md:min-w-[560px] h-[300px] md:h-[600px]! object-contain transition-transform duration-700 product-img"
             />
           </div>
-        </AnimatedContent>
+        </div>
       </swiper-slide>
     </swiper>
   </div>

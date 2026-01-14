@@ -21,9 +21,12 @@ defineProps<{
         class="absolute inset-0 rounded-b-[50px] rounded-t-[10px]! z-0 overflow-hidden"
       >
         <img
-          src="/products-section/image copy.png"
+          src="/products-section/card-bg.webp"
           class="w-full h-full object-cover"
           alt=""
+          width="287"
+          height="300"
+          loading="lazy"
         />
       </div>
       <div
@@ -32,6 +35,9 @@ defineProps<{
         <img
           :src="product.image"
           :alt="locale === 'ar' ? product.name_ar : product.name_en"
+          width="250"
+          height="270"
+          loading="lazy"
           class="w-full h-full object-cover mix-blend-multiply transition-transform duration-500"
         />
         <div

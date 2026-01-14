@@ -9,8 +9,11 @@ const { t, dir } = useLang();
   >
     <div class="absolute top-[-80%] right-0 z-10">
       <img
-        src="/footer/footer.png"
+        src="/footer/footer.webp"
         alt="Footer Decorative Image"
+        width="400"
+        height="400"
+        loading="lazy"
         class="object-contain drop-shadow-2xl max-w-[25vw] hidden lg:block"
       />
     </div>
@@ -89,6 +92,7 @@ const { t, dir } = useLang();
         <div class="flex gap-3">
           <a
             href="#"
+            aria-label="Facebook"
             class="w-[28px] h-[28px] border border-white/20 rounded-full flex items-center justify-center transition-all hover:border-white hover:bg-white/10"
           >
             <svg class="w-3 h-3 fill-white" viewBox="0 0 24 24">
@@ -99,6 +103,7 @@ const { t, dir } = useLang();
           </a>
           <a
             href="#"
+            aria-label="Instagram"
             class="w-[28px] h-[28px] border border-white/20 rounded-full flex items-center justify-center transition-all hover:border-white hover:bg-white/10"
           >
             <svg class="w-3 h-3 fill-white" viewBox="0 0 24 24">
@@ -109,6 +114,7 @@ const { t, dir } = useLang();
           </a>
           <a
             href="#"
+            aria-label="LinkedIn"
             class="w-[28px] h-[28px] border border-white/20 rounded-full flex items-center justify-center transition-all hover:border-white hover:bg-white/10"
           >
             <svg class="w-3 h-3 fill-white" viewBox="0 0 24 24">

@@ -25,7 +25,11 @@ const cartStore = useCartStore();
         >
           {{ locale === "en" ? "ع" : "EN" }}
         </button>
-        <router-link to="/" class="relative flex items-center justify-center">
+        <router-link
+          to="/"
+          class="relative flex items-center justify-center"
+          aria-label="View Cart"
+        >
           <div
             class="w-[28px] h-[28px] bg-cs-medici-blue rounded-full flex items-center justify-center shadow-lg"
           >
@@ -57,7 +61,7 @@ const cartStore = useCartStore();
             </span>
           </div>
         </router-link>
-        <button class="text-black">
+        <button class="text-black" aria-label="Toggle Menu">
           <svg
             width="24"
             height="24"

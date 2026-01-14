@@ -1,22 +1,22 @@
 export const SwiperProducts = [
   {
     name: "Product 1",
-    image: "/hero/product2.png",
+    image: "/hero/product2.webp",
     bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
   },
   {
     name: "Product 2",
-    image: "/hero/product1.png",
+    image: "/hero/product1.webp",
     bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
   },
   {
     name: "Product 1 Duplicate",
-    image: "/hero/product2.png",
+    image: "/hero/product2.webp",
     bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
   },
   {
     name: "Product 2 Duplicate",
-    image: "/hero/product1.png",
+    image: "/hero/product1.webp",
     bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
   },
 ];

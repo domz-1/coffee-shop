@@ -33,51 +33,13 @@ const emit = defineEmits<{
   complete: [];
 }>();
 const containerRef = useTemplateRef<HTMLDivElement>("containerRef");
-onMounted(() => {
+let ctx: gsap.Context | undefined;
+const animate = () => {
   const el = containerRef.value;
   if (!el) return;
-  const axis = props.direction === "horizontal" ? "x" : "y";
-  const offset = props.reverse ? -props.distance : props.distance;
-  const startPct = (1 - props.threshold) * 100;
-  gsap.set(el, {
-    [axis]: offset,
-    scale: props.scale,
-    opacity: props.animateOpacity ? props.initialOpacity : 1,
-  });
-  gsap.to(el, {
-    [axis]: 0,
-    scale: 1,
-    opacity: 1,
-    duration: props.duration,
-    ease: props.ease,
-    delay: props.delay,
-    onComplete: () => emit("complete"),
-    scrollTrigger: {
-      trigger: el,
-      start: `top ${startPct}%`,
-      toggleActions: "play none none none",
-      once: true,
-    },
-  });
-});
-watch(
-  () => [
-    props.distance,
-    props.direction,
-    props.reverse,
-    props.duration,
-    props.ease,
-    props.initialOpacity,
-    props.animateOpacity,
-    props.scale,
-    props.threshold,
-    props.delay,
-  ],
-  () => {
-    const el = containerRef.value;
-    if (!el) return;
-    ScrollTrigger.getAll().forEach((t) => t.kill());
-    gsap.killTweensOf(el);
+  // Clean up previous context if exists
+  ctx?.revert();
+  ctx = gsap.context(() => {
     const axis = props.direction === "horizontal" ? "x" : "y";
     const offset = props.reverse ? -props.distance : props.distance;
     const startPct = (1 - props.threshold) * 100;
@@ -101,15 +63,31 @@ watch(
         once: true,
       },
     });
+  }, el); // Scope to element
+};
+onMounted(() => {
+  animate();
+});
+watch(
+  () => [
+    props.distance,
+    props.direction,
+    props.reverse,
+    props.duration,
+    props.ease,
+    props.initialOpacity,
+    props.animateOpacity,
+    props.scale,
+    props.threshold,
+    props.delay,
+  ],
+  () => {
+    animate();
   },
   { deep: true },
 );
 onUnmounted(() => {
-  const el = containerRef.value;
-  if (el) {
-    ScrollTrigger.getAll().forEach((t) => t.kill());
-    gsap.killTweensOf(el);
-  }
+  ctx?.revert();
 });
 </script>
 <template>

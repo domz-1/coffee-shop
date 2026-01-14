@@ -1,8 +1,15 @@
 <script setup lang="ts">
+import { defineAsyncComponent } from "vue";
 import HeroSection from "@/components/home/HeroSection.vue";
-import MarqueeSection from "@/components/home/MarqueeSection.vue";
-import ProductsSection from "@/components/home/ProductsSection.vue";
-import WelcomeSection from "@/components/home/WelcomeSection.vue";
+const MarqueeSection = defineAsyncComponent(
+  () => import("@/components/home/MarqueeSection.vue"),
+);
+const ProductsSection = defineAsyncComponent(
+  () => import("@/components/home/ProductsSection.vue"),
+);
+const WelcomeSection = defineAsyncComponent(
+  () => import("@/components/home/WelcomeSection.vue"),
+);
 </script>
 <template>
   <div class="home-page">

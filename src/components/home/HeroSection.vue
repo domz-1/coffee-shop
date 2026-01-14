@@ -10,8 +10,12 @@ import HeroText from "./HeroText.vue";
       class="absolute top-[-50%] lg:top-[-20%] w-screen h-screen scale-150 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 right-[-15%] md:right-[-30%] rtl:right-auto rtl:left-[-15%] rtl:md:left-[-30%]"
     >
       <img
-        src="../../../public/hero/beside-the-carousel.png"
+        src="/hero/beside-the-carousel.webp"
         alt=""
+        width="800"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
         class="w-full h-full object-contain rtl:scale-x-[-1]"
       />
     </div>
@@ -19,8 +23,11 @@ import HeroText from "./HeroText.vue";
       class="absolute w-fit top-[-10%] h-screen scale-100 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 left-[-0%] md:left-[-0%] rtl:left-auto rtl:right-[-0%] rtl:md:right-0"
     >
       <img
-        src="../../../public/hero/squares-beside the text.png"
+        src="/hero/squares-beside the text.webp"
         alt=""
+        width="400"
+        height="400"
+        loading="lazy"
         class="w-full h-full object-contain rtl:scale-x-[-1]"
       />
     </div>

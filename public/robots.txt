@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://storied-jalebi-114f6f.netlify.app/sitemap.xml
