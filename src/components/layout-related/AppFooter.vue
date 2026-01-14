@@ -7,7 +7,6 @@ const { t, dir } = useLang();
     class="bg-linear-to-r from-cs-medici-blue to-cs-deep-water text-white relative mt-20"
     :dir="dir"
   >
-    
     <div class="absolute top-[-80%] right-0 z-10">
       <img
         src="/footer/footer.png"
@@ -16,7 +15,6 @@ const { t, dir } = useLang();
       />
     </div>
     <div class="max-w-[654.62px] mx-auto px-4 py-20 pb-10">
-      
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-10">
         <div class="flex flex-col gap-4 text-left rtl:text-right">
           <h3
@@ -76,7 +74,6 @@ const { t, dir } = useLang();
         </div>
       </div>
       <div class="w-full h-[1px] bg-white opacity-20 my-10"></div>
-      
       <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
           <p class="text-[10px] opacity-60 font-sans tracking-wide uppercase">
@@ -89,7 +86,6 @@ const { t, dir } = useLang();
             >{{ t("footer.privacy") }}</router-link
           >
         </div>
-        
         <div class="flex gap-3">
           <a
             href="#"

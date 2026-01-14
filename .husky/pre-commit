@@ -1,4 +1,4 @@
-bun run format:src
+bun run format
 bun run clean:comments
 bun run clean:empty
 bun run build

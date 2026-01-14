@@ -4,29 +4,10 @@ import { useProductStore } from "@/stores/useProductStore";
 import { useLang } from "@/composables/useLang";
 import ProductCard from "./ProductCard.vue";
 import AnimatedContent from "../vue-bits/AnimatedContent/AnimatedContent.vue";
+import { categoryList } from "@/lib/constants";
 const { t } = useLang();
 const productStore = useProductStore();
 const activeCategory = ref("all");
-const categoryList = [
-  { id: "all", labelKey: "home.categories.all", match: "All categories" },
-  {
-    id: "offers",
-    labelKey: "home.categories.specialOffers",
-    match: "Special offers",
-  },
-  {
-    id: "bestseller",
-    labelKey: "home.categories.bestSeller",
-    match: "Best seller",
-  },
-  { id: "roasting", labelKey: "home.categories.roasting", match: "Roasting" },
-  { id: "coffee", labelKey: "home.categories.coffee", match: "Coffee" },
-  {
-    id: "equipment",
-    labelKey: "home.categories.equipment",
-    match: "Coffee equipment",
-  },
-];
 const filteredProducts = computed(() => {
   const selectedCat = categoryList.find((c) => c.id === activeCategory.value);
   if (!selectedCat || selectedCat.id === "all") {

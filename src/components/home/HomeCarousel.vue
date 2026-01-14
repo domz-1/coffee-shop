@@ -5,29 +5,8 @@ import { useLang } from "@/composables/useLang";
 import AnimatedContent from "../vue-bits/AnimatedContent/AnimatedContent.vue";
 import "swiper/css";
 import "swiper/css/navigation";
+import { SwiperProducts } from "@/lib/constants";
 const { locale, dir } = useLang();
-const SwiperProducts = [
-  {
-    name: "Product 1",
-    image: "/hero/product2.png",
-    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
-  },
-  {
-    name: "Product 2",
-    image: "/hero/product1.png",
-    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
-  },
-  {
-    name: "Product 1 Duplicate",
-    image: "/hero/product2.png",
-    bgColor: "linear-gradient(to bottom, #6F4336 0%, #3B2F2F 100%)",
-  },
-  {
-    name: "Product 2 Duplicate",
-    image: "/hero/product1.png",
-    bgColor: "linear-gradient(to bottom, #004876 0%, #1E71A6 100%)",
-  },
-];
 </script>
 <template>
   <div class="relative w-full h-full group translate-y-0 lg:translate-y-12">

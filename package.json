@@ -1,20 +1,39 @@
 {
 	"name": "coffe-shop",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"type": "module",
+	"description": "Premium Coffee Shop Web Application built with Vue 3, Vite, and Tailwind CSS v4",
+	"author": "Adham",
+	"keywords": [
+		"vue",
+		"vite",
+		"tailwind-css",
+		"coffee-shop",
+		"e-commerce",
+		"pinia"
+	],
+	"engines": {
+		"node": ">=18.0.0",
+		"bun": ">=1.0.0"
+	},
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc -b && vite build",
 		"preview": "vite preview",
-		"format:src": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
+		"lint": "vue-tsc --noEmit",
+		"format": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
+		"clean:dist": "rm -rf dist",
 		"clean:empty": "find src -type f \\( -name \"*.vue\" -o -name \"*.ts\" -o -name \"*.json\" \\) -exec sed -i '/^$/d' {} +",
 		"clean:comments": "find src -type f -name \"*.vue\" -exec sed -i 's/<!--.*-->//g' {} +",
-		"deploy": "netlify deploy --prod --open ",
+		"deploy": "netlify deploy --prod --open",
 		"docker:build": "docker build -t coffe-shop .",
-		"docker:run": "docker run -p 3000:3000 coffe-shop",
-		"docker:stop": "docker stop coffe-shop",
-		"docker:remove": "docker rm coffe-shop",
+		"docker:run": "docker run -d -p 8080:80 --name coffe-shop-instance coffe-shop",
+		"docker:stop": "docker stop coffe-shop-instance || true",
+		"docker:remove": "docker rm coffe-shop-instance || true",
+		"docker:rebuild": "bun run docker:stop && bun run docker:remove && bun run docker:build && bun run docker:run",
+		"docker:compose:up": "docker-compose up -d",
+		"docker:compose:down": "docker-compose down",
 		"prepare": "husky"
 	},
 	"dependencies": {
