@@ -1,17 +1,22 @@
 export interface Review {
   user: string;
   rating: number;
-  comment: string;
+  comment_en: string;
+  comment_ar: string;
 }
 export interface Product {
   id: number;
-  name: string;
-  description: string;
+  name_en: string;
+  name_ar: string;
+  description_en: string;
+  description_ar: string;
   price: number;
   discount: number;
   image: string;
-  category: string;
-  author: string;
+  category_en: string;
+  category_ar: string;
+  author_en: string;
+  author_ar: string;
   gallery: string[];
   reviews: Review[];
 }

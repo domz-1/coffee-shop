@@ -1,12 +1,16 @@
 [
   {
     "id": 1,
-    "name": "Brazilan Rosted Coffee",
-    "author": "Amir Samantha",
-    "description": "Experience the rich, bold flavor of our premium Brazilian roasted beans. Sourced from the high-altitude regions of Minas Gerais, these beans are carefully roasted to perfection to bring out deep notes of chocolate and a smooth, nutty finish. Perfect for your morning espresso or a midday pick-me-up.",
+    "name_en": "Brazilian Roasted Coffee",
+    "name_ar": "قهوة برازيلية محمصة",
+    "author_en": "Amir Samantha",
+    "author_ar": "أمير سامانثا",
+    "description_en": "Experience the rich, bold flavor of our premium Brazilian roasted beans. Sourced from the high-altitude regions of Minas Gerais, these beans are carefully roasted to perfection to bring out deep notes of chocolate and a smooth, nutty finish. Perfect for your morning espresso or a midday pick-me-up.",
+    "description_ar": "استمتع بالنكهة الغنية والقوية لحبوب القهوة البرازيلية المحمصة الممتازة. تأتي هذه الحبوب من مناطق الارتفاعات العالية في ميناس جيرايس، ويتم تحميصها بعناية لإظهار نكهات الشوكولاتة العميقة ولمسة نهائية ناعمة من الجوز. مثالية للإسبريسو الصباحي أو لتجديد نشاطك في منتصف اليوم.",
     "price": 45.0,
     "discount": 0.0,
-    "category": "All categories",
+    "category_en": "All categories",
+    "category_ar": "جميع الفئات",
     "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800",
     "gallery": [
       "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=800",
@@ -17,23 +21,29 @@
       {
         "user": "Sarah J.",
         "rating": 5,
-        "comment": "Absolutely delicious! The chocolate notes are very prominent."
+        "comment_en": "Absolutely delicious! The chocolate notes are very prominent.",
+        "comment_ar": "لذيذة جداً! نكهة الشوكولاتة بارزة جداً."
       },
       {
         "user": "Michael R.",
         "rating": 4,
-        "comment": "Very smooth coffee, great for my French press."
+        "comment_en": "Very smooth coffee, great for my French press.",
+        "comment_ar": "قهوة ناعمة جداً، رائعة لماكينة French press الخاصة بي."
       }
     ]
   },
   {
     "id": 2,
-    "name": "Brazilan Rosted Coffee",
-    "author": "John Lennonk",
-    "description": "A premium selection of Brazilian coffee beans, roasted in small batches to ensure maximum freshness and flavor. This blend offers a balanced acidity with a sweet caramel aroma that will fill your kitchen with joy. Ideal for drip coffee makers and pour-over enthusiasts.",
+    "name_en": "Smooth Caramel Blend",
+    "name_ar": "مزيج الكراميل الناعم",
+    "author_en": "John Lennonk",
+    "author_ar": "جون لينونك",
+    "description_en": "A premium selection of Brazilian coffee beans, roasted in small batches to ensure maximum freshness and flavor. This blend offers a balanced acidity with a sweet caramel aroma that will fill your kitchen with joy. Ideal for drip coffee makers and pour-over enthusiasts.",
+    "description_ar": "مجموعة مختارة من حبوب البن البرازيلية، محمصة على دفعات صغيرة لضمان أقصى قدر من النضارة والنكهة. يقدم هذا المزيج حموضة متوازنة مع رائحة الكراميل الحلوة التي ستملأ مطبخك بالبهجة. مثالية لصناع القهوة بالتنقيط ومحبي صب القهوة.",
     "price": 50.0,
     "discount": 0.0,
-    "category": "All categories",
+    "category_en": "All categories",
+    "category_ar": "جميع الفئات",
     "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800",
     "gallery": [
       "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=800",
@@ -43,18 +53,23 @@
       {
         "user": "David W.",
         "rating": 5,
-        "comment": "The best coffee I've had in a long time. Highly recommend!"
+        "comment_en": "The best coffee I've had in a long time. Highly recommend!",
+        "comment_ar": "أفضل قهوة تناولتها منذ وقت طويل. أوصي بها بشدة!"
       }
     ]
   },
   {
     "id": 3,
-    "name": "Brazilan Rosted Coffee",
-    "author": "Toekang Sayoer",
-    "description": "Traditional Brazilian roasted coffee with a robust body and low acidity. This coffee is perfect for those who enjoy a strong, traditional cup of joe. The beans are dark roasted to provide a smoky and intense flavor profile that pairs perfectly with milk or cream.",
+    "name_en": "Traditional Dark Roast",
+    "name_ar": "التحميص الداكن التقليدي",
+    "author_en": "Toekang Sayoer",
+    "author_ar": "توكانج سايور",
+    "description_en": "Traditional Brazilian roasted coffee with a robust body and low acidity. This coffee is perfect for those who enjoy a strong, traditional cup of joe. The beans are dark roasted to provide a smoky and intense flavor profile that pairs perfectly with milk or cream.",
+    "description_ar": "قهوة برازيلية محمصة تقليدية بقوام قوي وحموضة منخفضة. هذه القهوة مثالية لأولئك الذين يستمتعون بكوب قهوة تقليدي قوي. الحبوب محمصة بشكل داكن لتقديم نكهة مدخنة ومكثفة تتناسب تماماً مع الحليب أو الكريمة.",
     "price": 40.0,
     "discount": 30.0,
-    "category": "Special offers",
+    "category_en": "Special offers",
+    "category_ar": "عروض خاصة",
     "image": "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=800",
     "gallery": [
       "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800",
@@ -64,19 +79,24 @@
       {
         "user": "Emma L.",
         "rating": 3,
-        "comment": "A bit too strong for my taste, but the quality is definitely there."
+        "comment_en": "A bit too strong for my taste, but the quality is definitely there.",
+        "comment_ar": "قوية بعض الشيء بالنسبة لذوقي، لكن الجودة موجودة بالتأكيد."
       }
     ]
   },
   {
     "id": 4,
-    "name": "Brazilan Rosted Coffee",
-    "author": "Imelda Saranghae",
-    "description": "Specially curated beans from the Cerrado region of Brazil. These beans undergo a unique natural processing method that enhances their natural sweetness and fruity undertones. A truly remarkable coffee that stands out with its complex flavor profile and delightful aftertaste.",
+    "name_en": "Cerrado Sweet Natural",
+    "name_ar": "سيرادو سويت ناتشورال",
+    "author_en": "Imelda Saranghae",
+    "author_ar": "إيميلدا سارانغاي",
+    "description_en": "Specially curated beans from the Cerrado region of Brazil. These beans undergo a unique natural processing method that enhances their natural sweetness and fruity undertones. A truly remarkable coffee that stands out with its complex flavor profile and delightful aftertaste.",
+    "description_ar": "حبوب مختارة خصيصاً من منطقة سيرادو في البرازيل. تخضع هذه الحبوب لطريقة معالجة طبيعية فريدة تعزز حلاوتها الطبيعية ونغماتها الفاكهية. قهوة رائعة حقاً تبرز بنكهتها المعقدة وطعمها اللذيذ بعد الشرب.",
     "price": 55.0,
     "discount": 0.0,
-    "category": "Special to Try",
-    "image": "https://images.unsplash.com/photo-1447933630983-c43621da2aad?q=80&w=800",
+    "category_en": "Special to Try",
+    "category_ar": "مميز للتجربة",
+    "image": "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=800",
     "gallery": [
       "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=800",
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800"
@@ -85,7 +105,8 @@
       {
         "user": "Linda P.",
         "rating": 5,
-        "comment": "Amazing flavor! You can really taste the fruity notes."
+        "comment_en": "Amazing flavor! You can really taste the fruity notes.",
+        "comment_ar": "نكهة مذهلة! يمكنك حقاً تذوق النكهات الفاكهية."
       }
     ]
   }

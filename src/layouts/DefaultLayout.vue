@@ -2,9 +2,9 @@
   <div :dir="locale === 'ar' ? 'rtl' : 'ltr'" class="min-h-screen bg-white">
     <AppNavbar />
     <main>
-      <router-view v-slot="{ Component }">
+      <router-view v-slot="{ Component, route }">
         <transition name="fade" mode="out-in">
-          <component :is="Component" />
+          <component :is="Component" :key="route.fullPath" />
         </transition>
       </router-view>
     </main>

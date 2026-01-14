@@ -1,32 +1,35 @@
 {
-  "name": "frontend-task",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview",
-    "format:src": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
-    "clean:empty": "find src -type f \\( -name \"*.vue\" -o -name \"*.ts\" -o -name \"*.json\" \\) -exec sed -i '/^$/d' {} +"
-  },
-  "dependencies": {
-    "pinia": "^3.0.4",
-    "swiper": "^12.0.3",
-    "vue": "^3.5.24",
-    "vue-i18n": "10",
-    "vue-router": "4",
-    "vue3-marquee-slider": "^1.0.5"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "@types/node": "^25.0.8",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/tsconfig": "^0.8.1",
-    "prettier": "^3.7.4",
-    "tailwindcss": "4",
-    "typescript": "~5.9.3",
-    "vite": "^7.2.4",
-    "vue-tsc": "^3.1.4"
-  }
+	"name": "frontend-task",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview",
+		"format:src": "prettier --write \"src/**/*.{ts,vue,json,css}\"",
+		"clean:empty": "find src -type f \\( -name \"*.vue\" -o -name \"*.ts\" -o -name \"*.json\" \\) -exec sed -i '/^$/d' {} +"
+	},
+	"dependencies": {
+		"gsap": "^3.13.0",
+		"pinia": "^3.0.4",
+		"pinia-plugin-persistedstate": "^4.7.1",
+		"swiper": "^12.0.3",
+		"vue": "^3.5.24",
+		"vue-i18n": "10",
+		"vue-router": "4",
+		"vue3-marquee-slider": "^1.0.5"
+	},
+	"devDependencies": {
+		"@tailwindcss/vite": "^4.1.18",
+		"@types/node": "^25.0.8",
+		"@vitejs/plugin-vue": "^6.0.1",
+		"@vue/tsconfig": "^0.8.1",
+		"prettier": "^3.7.4",
+		"tailwindcss": "4",
+		"typescript": "~5.9.3",
+		"vite": "^7.2.4",
+		"vue-tsc": "^3.1.4",
+		"jsrepo": "^3.0.10"
+	}
 }

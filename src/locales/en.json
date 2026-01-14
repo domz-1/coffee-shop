@@ -1,17 +1,35 @@
 {
   "home": {
     "title": "Welcome to Coffee Haven",
-    "subtitle": "Experience the finest coffee from around the world.",
-    "cta": "Explore Menu",
-    "ourProducts": "Our Premium Selection"
+    "subtitle": "Get your ordered (better) coffee delivered to you if you want.",
+    "cta": "SHOP 20% OFF",
+    "ourProducts": "Our Premium Selection",
+    "categories": {
+      "all": "All categories",
+      "specialOffers": "Special offers",
+      "bestSeller": "Best seller",
+      "roasting": "Roasting",
+      "coffee": "Coffee",
+      "equipment": "Coffee equipment"
+    }
   },
   "product": {
+    "back": "Back to Products",
     "addToCart": "Add to Cart",
     "quantity": "Quantity",
     "reviews": "Customer Reviews",
+    "writeReview": "Write a Review",
+    "verifiedPurchase": "Verified Purchase",
     "noReviews": "No reviews yet.",
     "price": "Price",
-    "discount": "Discounted Price"
+    "discount": "Discounted Price",
+    "save": "Save",
+    "responsibleSource": "Responsibly sourced by",
+    "outOf5": "out of 5",
+    "loading": "Loading product details...",
+    "notFound": "Product Not Found",
+    "notFoundDesc": "The product you're looking for doesn't exist or has been removed.",
+    "returnShop": "Return to Shop"
   },
   "cart": {
     "title": "Your Cart",
@@ -21,5 +39,22 @@
   "nav": {
     "home": "Home",
     "cart": "Cart"
+  },
+  "footer": {
+    "menu": "Menu",
+    "getInspired": "Get inspired",
+    "ourProducts": "Our products",
+    "betterWorld": "For a better world",
+    "contact": "Contact",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "location": "Cafe Location",
+    "availableIn": "We are available in",
+    "lorem": "Dubai, UAE",
+    "question": "Do you have a question? Send it to us!",
+    "phone": "Phone",
+    "social": "Social Media",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
   }
 }
