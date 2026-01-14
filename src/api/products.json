@@ -1,74 +1,91 @@
 [
   {
     "id": 1,
-    "name": "Espresso Gold",
-    "description": "A rich and smooth espresso with golden crema and notes of chocolate and almond.",
-    "price": 4.5,
-    "discount": 0.5,
-    "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600",
+    "name": "Brazilan Rosted Coffee",
+    "author": "Amir Samantha",
+    "description": "Experience the rich, bold flavor of our premium Brazilian roasted beans. Sourced from the high-altitude regions of Minas Gerais, these beans are carefully roasted to perfection to bring out deep notes of chocolate and a smooth, nutty finish. Perfect for your morning espresso or a midday pick-me-up.",
+    "price": 45.0,
+    "discount": 0.0,
+    "category": "All categories",
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800",
     "gallery": [
-      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600",
-      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=600"
+      "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=800",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800",
+      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=800"
     ],
     "reviews": [
       {
-        "user": "John Doe",
+        "user": "Sarah J.",
         "rating": 5,
-        "comment": "Best espresso in town!"
+        "comment": "Absolutely delicious! The chocolate notes are very prominent."
       },
       {
-        "user": "Jane Smith",
+        "user": "Michael R.",
         "rating": 4,
-        "comment": "Very rich flavor."
+        "comment": "Very smooth coffee, great for my French press."
       }
     ]
   },
   {
     "id": 2,
-    "name": "Cappuccino Royale",
-    "description": "Classic cappuccino topped with velvet foam and a dusting of premium cocoa.",
-    "price": 5.75,
+    "name": "Brazilan Rosted Coffee",
+    "author": "John Lennonk",
+    "description": "A premium selection of Brazilian coffee beans, roasted in small batches to ensure maximum freshness and flavor. This blend offers a balanced acidity with a sweet caramel aroma that will fill your kitchen with joy. Ideal for drip coffee makers and pour-over enthusiasts.",
+    "price": 50.0,
     "discount": 0.0,
-    "image": "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600",
+    "category": "All categories",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800",
     "gallery": [
-      "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600",
-      "https://images.unsplash.com/photo-1534706936160-d5ee67737249?q=80&w=600"
+      "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=800",
+      "https://images.unsplash.com/photo-1447933630983-c43621da2aad?q=80&w=800"
     ],
     "reviews": [
       {
-        "user": "Alice",
+        "user": "David W.",
         "rating": 5,
-        "comment": "So creamy!"
+        "comment": "The best coffee I've had in a long time. Highly recommend!"
       }
     ]
   },
   {
     "id": 3,
-    "name": "Caramel Macchiato",
-    "description": "Sweet caramel drizzled over steamed milk and espresso.",
-    "price": 6.25,
-    "discount": 1.0,
-    "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=600",
+    "name": "Brazilan Rosted Coffee",
+    "author": "Toekang Sayoer",
+    "description": "Traditional Brazilian roasted coffee with a robust body and low acidity. This coffee is perfect for those who enjoy a strong, traditional cup of joe. The beans are dark roasted to provide a smoky and intense flavor profile that pairs perfectly with milk or cream.",
+    "price": 40.0,
+    "discount": 30.0,
+    "category": "Special offers",
+    "image": "https://images.unsplash.com/photo-1506372023823-741c83b836fe?q=80&w=800",
     "gallery": [
-      "https://images.unsplash.com/photo-1485808191679-5f86510681a2?q=80&w=600"
-    ],
-    "reviews": []
-  },
-  {
-    "id": 4,
-    "name": "Iced Vanilla Latte",
-    "description": "Perfectly balanced espresso and milk over ice with natural vanilla syrup.",
-    "price": 5.5,
-    "discount": 0.0,
-    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600",
-    "gallery": [
-      "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600"
+      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=800",
+      "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=800"
     ],
     "reviews": [
       {
-        "user": "Bob",
-        "rating": 4,
-        "comment": "Very refreshing."
+        "user": "Emma L.",
+        "rating": 3,
+        "comment": "A bit too strong for my taste, but the quality is definitely there."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Brazilan Rosted Coffee",
+    "author": "Imelda Saranghae",
+    "description": "Specially curated beans from the Cerrado region of Brazil. These beans undergo a unique natural processing method that enhances their natural sweetness and fruity undertones. A truly remarkable coffee that stands out with its complex flavor profile and delightful aftertaste.",
+    "price": 55.0,
+    "discount": 0.0,
+    "category": "Special to Try",
+    "image": "https://images.unsplash.com/photo-1447933630983-c43621da2aad?q=80&w=800",
+    "gallery": [
+      "https://images.unsplash.com/photo-1580915411954-282cb1b0d780?q=80&w=800",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800"
+    ],
+    "reviews": [
+      {
+        "user": "Linda P.",
+        "rating": 5,
+        "comment": "Amazing flavor! You can really taste the fruity notes."
       }
     ]
   }

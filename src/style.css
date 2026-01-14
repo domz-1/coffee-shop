@@ -1,8 +1,10 @@
 @import "tailwindcss";
 @import "tailwindcss/preflight";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family:
+    "Quicksand", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,19 +18,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 [dir="rtl"] {
   font-family: "Inter", "Arial", sans-serif;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 /* Animations */
 @layer components {
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.3s ease;
   }
+
   .fade-enter-from,
   .fade-leave-to {
     opacity: 0;
