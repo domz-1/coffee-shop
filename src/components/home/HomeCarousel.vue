@@ -6,8 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { SwiperProducts } from "@/lib/constants";
 const { locale, dir } = useLang();
-import IconArrowCircleLeft from "@/components/icons/IconArrowCircleLeft.vue";
-import IconArrowCircleRight from "@/components/icons/IconArrowCircleRight.vue";
+import { IconArrowCircleLeft, IconArrowCircleRight } from "@/components";
 </script>
 <template>
   <div class="relative w-full h-full group translate-y-0 lg:translate-y-12">

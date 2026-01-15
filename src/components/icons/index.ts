@@ -1,0 +1,16 @@
+export { default as IconAlertCircle } from "./IconAlertCircle.vue";
+export { default as IconArrowCircleLeft } from "./IconArrowCircleLeft.vue";
+export { default as IconArrowCircleRight } from "./IconArrowCircleRight.vue";
+export { default as IconArrowDiagonal } from "./IconArrowDiagonal.vue";
+export { default as IconArrowLeft } from "./IconArrowLeft.vue";
+export { default as IconCart } from "./IconCart.vue";
+export { default as IconFacebook } from "./IconFacebook.vue";
+export { default as IconFeatureEasy } from "./IconFeatureEasy.vue";
+export { default as IconFeatureQuality } from "./IconFeatureQuality.vue";
+export { default as IconFeatureQuick } from "./IconFeatureQuick.vue";
+export { default as IconFeatureTaste } from "./IconFeatureTaste.vue";
+export { default as IconInstagram } from "./IconInstagram.vue";
+export { default as IconLinkedIn } from "./IconLinkedIn.vue";
+export { default as IconMenu } from "./IconMenu.vue";
+export { default as IconQuickActions } from "./IconQuickActions.vue";
+export { default as IconStar } from "./IconStar.vue";

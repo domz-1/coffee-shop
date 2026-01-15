@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 import { useCartStore } from "@/stores/useCartStore";
-import IconCart from "@/components/icons/IconCart.vue";
-import IconMenu from "@/components/icons/IconMenu.vue";
+import { IconCart, IconMenu } from "@/components";
 const { locale, toggleLocale } = useLang();
 const cartStore = useCartStore();
 </script>

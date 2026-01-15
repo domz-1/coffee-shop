@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 const { t, dir } = useLang();
-import IconFeatureQuality from "@/components/icons/IconFeatureQuality.vue";
-import IconFeatureEasy from "@/components/icons/IconFeatureEasy.vue";
-import IconFeatureTaste from "@/components/icons/IconFeatureTaste.vue";
-import IconFeatureQuick from "../icons/IconFeatureQuick.vue";
+import {
+  IconFeatureQuality,
+  IconFeatureEasy,
+  IconFeatureTaste,
+  IconFeatureQuick,
+} from "@/components";
 </script>
 <template>
   <section

@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 const { t } = useLang();
-import IconArrowDiagonal from "@/components/icons/IconArrowDiagonal.vue";
-import IconQuickActions from "@/components/icons/IconQuickActions.vue";
+import { IconArrowDiagonal, IconQuickActions } from "@/components";
 </script>
 <template>
   <div

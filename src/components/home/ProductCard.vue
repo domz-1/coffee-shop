@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Product } from "@/types";
+import type { Product } from "@/types/models";
 import { useLang } from "@/composables/useLang";
-import IconStar from "@/components/icons/IconStar.vue";
+import { IconStar } from "@/components";
 const { locale } = useLang();
 defineProps<{
   product: Product;

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from "vue";
-import HeroSection from "@/components/home/HeroSection.vue";
+import { HeroSection } from "@/components";
 const MarqueeSection = defineAsyncComponent(
   () => import("@/components/home/MarqueeSection.vue"),
 );

@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useLang } from "@/composables/useLang";
 const { t, dir } = useLang();
-import IconFacebook from "@/components/icons/IconFacebook.vue";
-import IconInstagram from "@/components/icons/IconInstagram.vue";
-import IconLinkedIn from "@/components/icons/IconLinkedIn.vue";
+import { IconFacebook, IconInstagram, IconLinkedIn } from "@/components";
 </script>
 <template>
   <footer
