@@ -7,7 +7,7 @@ import HeroText from "./HeroText.vue";
     class="min-h-screen flex items-center justify-center px-4 md:px-0 bg-transparent pb-10 lg:pb-0 overflow-x-hidden! overflow-y-hidden!"
   >
     <div
-      class="absolute top-[-50%] lg:top-[-20%] w-screen h-screen scale-150 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 right-[-15%] md:right-[-30%] rtl:right-auto rtl:left-[-15%] rtl:md:left-[-30%]"
+      class="hidden lg:block absolute top-[-50%] lg:top-[-20%] w-screen h-screen scale-150 z-0 opacity-50 md:opacity-100 pointer-events-none transition-all duration-700 right-[-15%] md:right-[-30%] rtl:right-auto rtl:left-[-15%] rtl:md:left-[-30%]"
     >
       <img
         src="/hero/beside-the-carousel.webp"
